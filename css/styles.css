@@ -1,0 +1,119 @@
+:root{
+    --textoParrafos: 'Raleway', sans-serif;
+    --Masvida: 'Fugaz One', cursive;
+    --profitnes: 'Caveat', cursive;
+    --barra: #99BDDF;
+    --blanco: #fff;
+    --negro: #000;
+    --nuevo: #706a6a;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+    margin: 0;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 2;
+    font-family: var(--textoParrafos);
+    & .nav-bar{
+        background-color: var(--barra);
+    }
+}
+.nuevoo{
+    color: var(--nuevo);
+}
+.nav-bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    & .child1{
+        font-family: var(--Masvida);
+        margin-left: 20px;
+        font-size: 2.6em;
+    }
+    & .child2{
+        font-family: var(--profitnes);
+        color: var(--blanco);
+        font-size: 1.0em;
+    }
+    & .movil{
+        text-align: right;
+        font-size: 2.5em;
+        margin-right: 20px;
+    }
+}
+nav {
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+nav a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+.main-one{
+    background-image: url(../imagenes/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+    font-family: var(--profitnes);
+    & h1{
+        font-size: 3em;
+    }
+    & h2{
+        font-size: 4.1em;
+    }
+}
+.main-tree{
+    width: 80%;
+    margin: 40px auto;
+}
+.texto{
+    text-align: justify;
+}
+div > img{
+    width: 100%;
+}
+article .importante{
+    font-weight: bold;
+}
+footer div a i{
+    color: var(--negro);
+    font-size: 1.5em;
+    text-align: center;
+}
+footer h4{
+    text-align: center;
+}
+.espacio{
+    height: 10vh;
+}
+
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    margin-top: 5vh;
+}
+td {
+    margin: 10px;
+    text-align: center;
+}
+td:hover{
+    background-color: var(--barra);
+}
